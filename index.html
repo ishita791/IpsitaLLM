@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Magic Box</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <div class="ai-icon">✨</div>
+
+            <h1>AI Magic Box</h1>
+
+            <p>
+                Ask Gemini anything!
+            </p>
+        </div>
+
+
+        <div class="input-section">
+
+            <label for="prompt">
+                What do you want to ask?
+            </label>
+
+            <textarea id="prompt" placeholder="Example: Explain JavaScript to me like I am 10 years old..."></textarea>
+
+
+            <button id="askBtn">
+                ✨ Ask Gemini
+                <div id="loading" class="loading">
+
+    <div class="spinner"></div>
+
+    <p>Gemini is thinking...</p>
+
+</div>
+            </button>
+
+        </div>
+
+
+        <div id="loading" class="loading">
+
+            <div class="spinner"></div>
+
+            <p>Gemini is thinking...</p>
+
+        </div>
+
+
+        <div class="response-section">
+
+            <div class="response-header">
+
+                <span>🤖</span>
+
+                <h2>Gemini's Response</h2>
+
+            </div>
+
+            <div id="result">
+                <p class="placeholder">
+                    Your AI response will appear here...
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
